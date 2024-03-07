@@ -20,7 +20,12 @@ const HOCNavbar = (WrappedComp) => {
     return (
       <>
         <Navbar />
-        <WrappedComp {...props} someDefaultProp1={someDefaultProp1} someDefaultProp2={someDefaultProp2}/>
+        
+        <WrappedComp
+          {...props}
+          someDefaultProp1={someDefaultProp1}
+          someDefaultProp2={someDefaultProp2}
+        />
       </>
     );
   };
